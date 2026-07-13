@@ -14,4 +14,106 @@
 </head>
 <body>
 
-  
+<header class="site-head">
+  <div class="wrap site-head__row">
+  <div class="brand">
+  <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true">
+    <rect x="1" y="1" width="38" height="38" fill="none" stroke="currentColor" stroke-width="1"/>
+    <line x1="1" y1="20" x2="39" y2="20" stroke="currentColor" stroke-width="0.6"/>
+    <line x1="15.3" y1="1" x2="15.3" y2="39" stroke="currentColor" stroke-width="0.6"/>
+  </svg>
+       <span class="brand__text">The&nbsp;Proportion&nbsp;Study</span>
+    </div>
+    <nav class="site-head__nav">
+       <a href="#measure">Measure</a>
+      <a href="#method">The method</a>
+      <a href="#privacy">Privacy</a>
+  </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero__row">
+    <div class="hero__copy">
+        <p class="eyebrow">Φ = 1.6180339887…</p>
+<h1>
+Your face,
+<br>
+drawn out<br>
+in <em>ratios</em>.
+</h1>
+  <p class="hero__lede">
+Painters and architects have been using the golden ratio to plan faces for six hundred years now. Nature's been doing it even longer — think seashells, sunflowers, tree branches. This page just does the same thing, minus the paintbrush: it finds your features and runs the numbers.</p>
+<a href="#measure" class="btn btn--primary">Take the measurement</a>
+</div>
+<div class="hero__diagram" aria-hidden="true">
+    <svg viewBox="0 0 360 460" class="construction-plate">
+<defs>
+<clipPath id="plateClip"><rect x="0" y="0" width="360" height="460" /></clipPath>
+  </defs>
+  <g clip-path="url(#plateClip)">
+           
+  <ellipse cx="180" cy="230" rx="110" ry="160" class="plate-line plate-line--primary" />
+          
+    <line x1="20" y1="118" x2="340" y2="118" class="plate-line plate-line--guide" />
+    <line x1="20" y1="180" x2="340" y2="180" class="plate-line plate-line--guide" />
+    <line x1="20" y1="282" x2="340" y2="282" class="plate-line plate-line--guide" />
+    <line x1="20" y1="342" x2="340" y2="342" class="plate-line plate-line--guide" />
+    <line x1="180" y1="40" x2="180" y2="430" class="plate-line plate-line--guide" />
+         
+    <ellipse cx="138" cy="196" rx="20" ry="11" class="plate-line plate-line--feature" />
+    <ellipse cx="222" cy="196" rx="20" ry="11" class="plate-line plate-line--feature" />
+    <circle cx="138" cy="196" r="3.4" class="plate-line plate-line--feature" fill="currentColor" stroke="none" />
+    <circle cx="222" cy="196" r="3.4" class="plate-line plate-line--feature" fill="currentColor" stroke="none" />
+   
+<path d="M180 200 L168 268 Q180 280 192 268" class="plate-line plate-line--feature" />
+<path d="M150 312 Q180 326 210 312" class="plate-line plate-line--feature" />
+    <path d="M115 172 Q138 162 161 172" class="plate-line plate-line--feature" />
+        <path d="M199 172 Q222 162 245 172" class="plate-line plate-line--feature" />
+          
+  <path d="M340 118  A 162 162 0 0 1 178 280
+                     A 100 100 0 0 1 78 180
+                     A 62 62 0 0 1 140 118
+                     A 38 38 0 0 1 178 156"
+  class="plate-line plate-line--spiral" />
+  <text x="20" y="106" class="plate-label">A</text>
+  <text x="20" y="170" class="plate-label">B</text>
+  <text x="20" y="276" class="plate-label">C</text>
+  <text x="20" y="336" class="plate-label">D</text>
+</g>
+</svg>
+<p class="diagram-caption">A construction plate, the kind a draftsman would pin above a desk. Yours will look like this once we've found your features.</p>
+</div>
+</div>
+</section>
+
+ <section class="measure" id="measure">
+  <div class="wrap">
+
+<div class="measure__intro">
+   <p class="eyebrow">01 — Get a photo or Upload it</p>
+      <h2>Face the camera, or hand over one you already have.</h2>
+  <p class="measure__sub">Look straight ahead, pull your hair back from your forehead and jaw if you can, and keep the lighting even. Tilted heads throw the measurement off more than bad lighting does.</p>
+  </div>
+
+  <div class="capture-card" id="captureCard">
+
+  <div class="capture-state" id="stateChoose" data-state="choose">
+<div class="choose-grid">
+<button class="choose-tile" id="btnUseCamera" type="button">
+<svg viewBox="0 0 48 48" class="choose-tile__icon"><path d="M9 14h6l3-5h12l3 5h6a2 2 0 0 1 2 2v22a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V16a2 2 0 0 1 2-2Z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="24" cy="27" r="7.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+<span class="choose-tile__title">Use your camera</span>
+<span class="choose-tile__hint">Takes a single still frame. Nothing is recorded.</span>
+</button>
+
+<label class="choose-tile" id="btnUpload">
+  <input type="file" id="fileInput" accept="image/*" hidden />
+  <svg viewBox="0 0 48 48" class="choose-tile__icon"><path d="M24 31V9m0 0-8 8m8-8 8 8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 31v6a3 3 0 0 0 3 3h26a3 3 0 0 0 3-3v-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+  <span class="choose-tile__title">Upload a photo</span>
+  <span class="choose-tile__hint">JPG or PNG, one face, facing forward.</span>
+  </label>
+</div>
+</div>
+
+
+

@@ -119,3 +119,54 @@ body::before {
 }
 .hero__diagram { position: relative; }
 
+.construction-plate {
+    width: 100%;
+    height: auto;
+    color: #1b1a17;
+    background: #eae3d3;
+    border: 1px solid rgba(27, 26, 23, 0.14);
+    border-radius: 3px;
+}
+.plate-line { fill: none; stroke: currentColor; vector-effect: non-scaling-stroke; }
+.plate-line--primary { stroke-width: 1.4; opacity: 0.85; }
+.plate-line--guide { stroke-width: 0.6; stroke-dasharray: 2 4; opacity: 0.55; color: #7c5f2c; }
+.plate-line--feature { stroke-width: 1.1; opacity: 0.8; }
+.plate-line--spiral { stroke-width: 1; stroke-dasharray: 4 3; color: #a8442e; opacity: 0.8; }
+.plate-label {
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 12px;
+    fill: #7c5f2c;
+    opacity: 0.75;
+}
+.diagram-caption {
+    font-size: 13px;
+    color: #534f45;
+    margin: 12px 4px 0;
+    max-width: 340px;
+}
+.measure { padding: 40px 0 96px; }
+.measure__intro { max-width: 640px; margin-bottom: 40px; }
+.measure__intro h2 { font-size: 34px; margin-bottom: 14px; line-height: 1.2; }
+.measure__sub { color: #534f45; font-size: 15.5px; margin: 0; }
+.capture-card {
+    background: #eae3d3;
+    border: 1px solid rgba(27, 26, 23, 0.14);
+    border-radius: 3px;
+    padding: 48px;
+}
+.choose-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+
+.choose-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding: 40px 24px;
+    background: #f2ede3;
+    border: 1px solid rgba(27, 26, 23, 0.28);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: border-color 0.15s ease, transform 0.12s ease;
+}
+

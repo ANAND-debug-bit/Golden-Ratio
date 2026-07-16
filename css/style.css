@@ -322,6 +322,13 @@ body::before {
     font-size: 12.5px;
     color: #534f45;
 }
+.privacy { padding: 72px 0; }
+
+.privacy__row { display: flex; gap: 28px; align-items: flex-start; max-width: 760px; }
+.privacy__icon { width: 44px; height: 44px; color: #6b7660; flex-shrink: 0; margin-top: 4px; }
+.privacy h2 { font-size: 24px; margin-bottom: 10px; }
+
+.privacy p { color: #534f45; font-size: 15px; margin: 0; }
 
 
 
